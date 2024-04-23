@@ -41,21 +41,29 @@ struct AllJournalEntriesList: View {
                         let entries = journalViewModel.allEntriesOnFile
                         VStack {
                             ScrollView (.vertical, showsIndicators: false) {
-                                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+                                LazyVGrid(
+                                    columns: [
+                                        GridItem(.flexible()),
+                                        GridItem(.flexible()),
+                                        GridItem(.flexible())
+                                    ]
+                                ) {
                                     ForEach (entries.indices, id: \.self) { index in
-                                        IndividualJournalEntryCard(entry: entries[index])
-                                            .onTapGesture {
-                                                navigateToViewEntryDetails = true
-                                            }
-                                            .navigationDestination(isPresented: $navigateToViewEntryDetails) {
-                                                JournalEntryDetails(
-                                                    journalViewModel: journalViewModel,
-                                                    selectedJournalEntryID: entries[index].id
-                                                )
-                                            }
+                                        NavigationLink {
+                                            JournalEntryDetails(
+                                                journalViewModel: journalViewModel,
+                                                selectedJournalEntryID: entries[index].id
+                                            )
+                                        } label: {
+                                            IndividualJournalEntryCard(entry: entries[index])
+                                                .padding(.bottom)
+                                        }
+                                        
                                     }
                                 }
                             }
+                            .padding(.top)
+                            //.padding([.horizontal, .top])
                             .refreshable {
                                 journalViewModel.getAllJournalEntriesOnFile()
                             }

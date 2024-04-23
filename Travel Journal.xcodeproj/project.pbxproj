@@ -26,6 +26,7 @@
 		7609F9C22BD1EDAD00C762A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */; };
 		7609F9C42BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */; };
 		7609F9C62BD1F29800C762A7 /* IndividualJournalEntryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */; };
+		763DFCA02BD7C23800D9D8AE /* HighlightImagesDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DFC9F2BD7C23800D9D8AE /* HighlightImagesDialog.swift */; };
 		7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */; };
 		768F277B2BD3F340009649A0 /* PhotosPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277A2BD3F340009649A0 /* PhotosPickerService.swift */; };
 		768F277D2BD4002A009649A0 /* AddHighlightLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */; };
@@ -52,6 +53,7 @@
 		7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeLottieButtonAnimations.swift; sourceTree = "<group>"; };
 		7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJournalEntryCard.swift; sourceTree = "<group>"; };
+		763DFC9F2BD7C23800D9D8AE /* HighlightImagesDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightImagesDialog.swift; sourceTree = "<group>"; };
 		7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewHighlightWidget.swift; sourceTree = "<group>"; };
 		768F277A2BD3F340009649A0 /* PhotosPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerService.swift; sourceTree = "<group>"; };
 		768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHighlightLocation.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */,
 				768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */,
 				7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */,
+				763DFC9F2BD7C23800D9D8AE /* HighlightImagesDialog.swift */,
 			);
 			path = "Travel Journal";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				7609F9C42BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift in Sources */,
 				7609F9B22BD1DB6D00C762A7 /* AddJournalEntry.swift in Sources */,
 				76DFC7ED2BD299E300C77528 /* GeoLocationService.swift in Sources */,
+				763DFCA02BD7C23800D9D8AE /* HighlightImagesDialog.swift in Sources */,
 				7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */,
 				7609F99A2BD1D69300C762A7 /* Travel_JournalApp.swift in Sources */,
 				768F277D2BD4002A009649A0 /* AddHighlightLocation.swift in Sources */,

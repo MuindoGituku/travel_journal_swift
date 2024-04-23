@@ -11,11 +11,12 @@ struct JournalEntryHighlightsSheet: View {
     
     let entryInView: JournalEntry
     let addHighlightButtonAction: () -> Void
+    let onTapImageRect: () -> Void
     @ObservedObject var journalViewModel: JournalViewModel
     @Binding var selectedHighlightIndex: Int
     
     var body: some View {
-        VStack {
+        VStack (alignment: .leading) {
             Text("Journal Highlights")
                 .font(.system(size: 20, weight: .black, design: .rounded))
                 .padding()
@@ -23,9 +24,10 @@ struct JournalEntryHighlightsSheet: View {
                 ForEach(entryInView.entryHighlights.indices, id: \.self) { index in
                     EntryHighlightCard (
                         entryInView: entryInView.id,
-                        highlightInView: entryInView.entryHighlights[index],
-                        journalViewModel: journalViewModel
+                        highlightInView: entryInView.entryHighlights[index], 
+                        onTapImageRect: onTapImageRect
                     )
+                    .padding(.horizontal)
                     .tabItem {
                         Text(entryInView.entryHighlights[index].highlightLocation)
                     }
@@ -35,15 +37,17 @@ struct JournalEntryHighlightsSheet: View {
                     isFirstEntryToAdd: entryInView.entryHighlights.isEmpty,
                     buttonAction: addHighlightButtonAction
                 )
+                .padding(.horizontal)
                 .tabItem {
                     Label("Add", systemImage: "plus")
                 }
                 .tag(entryInView.entryHighlights.count)
             }
-            .padding(.horizontal)
+            //.padding(.horizontal)
             .tabViewStyle(.page(indexDisplayMode: .never))
             if selectedHighlightIndex != entryInView.entryHighlights.count {
                 HStack {
+                    Spacer()
                     ForEach (entryInView.entryHighlights.indices, id: \.self) { index in
                         Rectangle()
                             .frame(width: selectedHighlightIndex == index ? 35 : 10, height: 10)
@@ -55,6 +59,12 @@ struct JournalEntryHighlightsSheet: View {
                                 }
                             }
                     }
+                    Image(systemName: "plus.circle")
+                        .foregroundStyle(.blue.opacity(0.5))
+                        .onTapGesture {
+                            selectedHighlightIndex = entryInView.entryHighlights.count
+                        }
+                    Spacer()
                 }
             }
         }
@@ -86,7 +96,7 @@ struct JournalEntryHighlightsSheet: View {
                     travelDate: Date(timeIntervalSince1970: 1633392000) // October 5, 2023
                 )
             ]
-        ), addHighlightButtonAction: { },
+        ), addHighlightButtonAction: { }, onTapImageRect: { },
         journalViewModel: JournalViewModel(
             journalRepo: JournalRepository()
         ),

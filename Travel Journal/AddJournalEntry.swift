@@ -157,7 +157,6 @@ struct AddJournalEntry: View {
             }
         }
         .navigationTitle("Add New Entry")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

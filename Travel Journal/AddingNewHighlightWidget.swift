@@ -23,7 +23,7 @@ struct AddingNewHighlightWidget: View {
             Text("Click on the button below to upload a new highlight under your Journal entry for Paris, Italy.")
                 .padding([.horizontal, .bottom])
                 .multilineTextAlignment(.center)
-                .font(.system(size: 16, weight: .medium, design: .rounded))
+                .font(.system(size: 16, weight: .regular, design: .rounded))
             Button(
                 action: buttonAction,
                 label: {

@@ -19,6 +19,9 @@ struct JournalEntryDetails: View {
     @State private var fabOffset: CGFloat = 0
     @State var selectedHighlightIndex = 0
     
+    @State private var showHighlightImagesPopover = false
+    @State var selectedImageIndex = 0
+    
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 90.8588443, longitude: 2.2943506),
         latitudinalMeters: 10000,
@@ -149,6 +152,27 @@ struct JournalEntryDetails: View {
                     }
                     .padding(.trailing)
                 }
+                .overlay(alignment: .center) {
+                    ZStack {
+                        Color.black.opacity(0.4).edgesIgnoringSafeArea(.all)
+                        if showHighlightImagesPopover {
+                            HighlightImagesDialog(
+                                currentSelectedEntryHighlight: .constant(entry.entryThumbnail),
+                                onImageSetAsThumbnail: { imageURL in
+                                    journalViewModel.updateSelectedEntryThumbnailImage(
+                                        entryID: selectedJournalEntryID,
+                                        imageURL: imageURL
+                                    )
+                                }, onImageDialogDismiss: { showHighlightImagesPopover = false },
+                                uploadedHighlightImages: entry.entryHighlights[selectedHighlightIndex].entryHighlights,
+                                selectedImageIndex: $selectedImageIndex
+                            )
+                            .background(.white.opacity(0.5))
+                            .shadow(radius: 10)
+                        }
+                    }
+                    .opacity(showHighlightImagesPopover ? 1 : 0)
+                }
                 .sheet(
                     isPresented: $showHighlightsInfoSheet,
                     onDismiss: {
@@ -161,6 +185,10 @@ struct JournalEntryDetails: View {
                             addHighlightButtonAction: {
                                 showHighlightsInfoSheet = false
                                 navigateToAddNewHighlight = true
+                            },
+                            onTapImageRect: {
+                                showHighlightsInfoSheet = false
+                                showHighlightImagesPopover = true
                             },
                             journalViewModel: journalViewModel,
                             selectedHighlightIndex: $selectedHighlightIndex
