@@ -11,6 +11,27 @@
 		7609F99C2BD1D69300C762A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F99B2BD1D69300C762A7 /* ContentView.swift */; };
 		7609F99E2BD1D69500C762A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609F99D2BD1D69500C762A7 /* Assets.xcassets */; };
 		7609F9A12BD1D69500C762A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609F9A02BD1D69500C762A7 /* Preview Assets.xcassets */; };
+		7609F9A82BD1D6B200C762A7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9A72BD1D6B200C762A7 /* Models.swift */; };
+		7609F9AB2BD1D89C00C762A7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7609F9AA2BD1D89C00C762A7 /* Lottie */; };
+		7609F9AE2BD1DAF200C762A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7609F9AD2BD1DAF200C762A7 /* FirebaseFirestore */; };
+		7609F9B02BD1DAF200C762A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7609F9AF2BD1DAF200C762A7 /* FirebaseStorage */; };
+		7609F9B22BD1DB6D00C762A7 /* AddJournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9B12BD1DB6D00C762A7 /* AddJournalEntry.swift */; };
+		7609F9B42BD1DB8800C762A7 /* AddJournalHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9B32BD1DB8800C762A7 /* AddJournalHighlight.swift */; };
+		7609F9B62BD1DBB200C762A7 /* AllJournalEntriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9B52BD1DBB200C762A7 /* AllJournalEntriesList.swift */; };
+		7609F9B82BD1DBC100C762A7 /* JournalEntryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9B72BD1DBC100C762A7 /* JournalEntryDetails.swift */; };
+		7609F9BA2BD1DC7200C762A7 /* JournalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9B92BD1DC7200C762A7 /* JournalRepository.swift */; };
+		7609F9BC2BD1DC8300C762A7 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9BB2BD1DC8300C762A7 /* JournalViewModel.swift */; };
+		7609F9BE2BD1EB9300C762A7 /* LottieAnimatons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9BD2BD1EB9300C762A7 /* LottieAnimatons.swift */; };
+		7609F9C02BD1EBF900C762A7 /* FullSizeLottieAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9BF2BD1EBF900C762A7 /* FullSizeLottieAnimations.swift */; };
+		7609F9C22BD1EDAD00C762A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */; };
+		7609F9C42BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */; };
+		7609F9C62BD1F29800C762A7 /* IndividualJournalEntryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */; };
+		7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */; };
+		768F277B2BD3F340009649A0 /* PhotosPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277A2BD3F340009649A0 /* PhotosPickerService.swift */; };
+		768F277D2BD4002A009649A0 /* AddHighlightLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */; };
+		768F277F2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */; };
+		768F27812BD43BD0009649A0 /* EntryHighlightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */; };
+		76DFC7ED2BD299E300C77528 /* GeoLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +40,24 @@
 		7609F99B2BD1D69300C762A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7609F99D2BD1D69500C762A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7609F9A02BD1D69500C762A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7609F9A72BD1D6B200C762A7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7609F9B12BD1DB6D00C762A7 /* AddJournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalEntry.swift; sourceTree = "<group>"; };
+		7609F9B32BD1DB8800C762A7 /* AddJournalHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalHighlight.swift; sourceTree = "<group>"; };
+		7609F9B52BD1DBB200C762A7 /* AllJournalEntriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllJournalEntriesList.swift; sourceTree = "<group>"; };
+		7609F9B72BD1DBC100C762A7 /* JournalEntryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetails.swift; sourceTree = "<group>"; };
+		7609F9B92BD1DC7200C762A7 /* JournalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRepository.swift; sourceTree = "<group>"; };
+		7609F9BB2BD1DC8300C762A7 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		7609F9BD2BD1EB9300C762A7 /* LottieAnimatons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimatons.swift; sourceTree = "<group>"; };
+		7609F9BF2BD1EBF900C762A7 /* FullSizeLottieAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeLottieAnimations.swift; sourceTree = "<group>"; };
+		7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSizeLottieButtonAnimations.swift; sourceTree = "<group>"; };
+		7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJournalEntryCard.swift; sourceTree = "<group>"; };
+		7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewHighlightWidget.swift; sourceTree = "<group>"; };
+		768F277A2BD3F340009649A0 /* PhotosPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerService.swift; sourceTree = "<group>"; };
+		768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHighlightLocation.swift; sourceTree = "<group>"; };
+		768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryHighlightsSheet.swift; sourceTree = "<group>"; };
+		768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHighlightCard.swift; sourceTree = "<group>"; };
+		76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609F9AB2BD1D89C00C762A7 /* Lottie in Frameworks */,
+				7609F9AE2BD1DAF200C762A7 /* FirebaseFirestore in Frameworks */,
+				7609F9B02BD1DAF200C762A7 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +93,28 @@
 		7609F9982BD1D69300C762A7 /* Travel Journal */ = {
 			isa = PBXGroup;
 			children = (
+				7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */,
 				7609F9992BD1D69300C762A7 /* Travel_JournalApp.swift */,
 				7609F99B2BD1D69300C762A7 /* ContentView.swift */,
 				7609F99D2BD1D69500C762A7 /* Assets.xcassets */,
 				7609F99F2BD1D69500C762A7 /* Preview Content */,
+				7609F9A72BD1D6B200C762A7 /* Models.swift */,
+				7609F9B12BD1DB6D00C762A7 /* AddJournalEntry.swift */,
+				7609F9B32BD1DB8800C762A7 /* AddJournalHighlight.swift */,
+				7609F9B52BD1DBB200C762A7 /* AllJournalEntriesList.swift */,
+				7609F9B72BD1DBC100C762A7 /* JournalEntryDetails.swift */,
+				7609F9B92BD1DC7200C762A7 /* JournalRepository.swift */,
+				7609F9BB2BD1DC8300C762A7 /* JournalViewModel.swift */,
+				7609F9BD2BD1EB9300C762A7 /* LottieAnimatons.swift */,
+				7609F9BF2BD1EBF900C762A7 /* FullSizeLottieAnimations.swift */,
+				7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */,
+				7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */,
+				76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */,
+				768F277A2BD3F340009649A0 /* PhotosPickerService.swift */,
+				768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */,
+				768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */,
+				768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */,
+				7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */,
 			);
 			path = "Travel Journal";
 			sourceTree = "<group>";
@@ -83,6 +143,11 @@
 			dependencies = (
 			);
 			name = "Travel Journal";
+			packageProductDependencies = (
+				7609F9AA2BD1D89C00C762A7 /* Lottie */,
+				7609F9AD2BD1DAF200C762A7 /* FirebaseFirestore */,
+				7609F9AF2BD1DAF200C762A7 /* FirebaseStorage */,
+			);
 			productName = "Travel Journal";
 			productReference = 7609F9962BD1D69300C762A7 /* Travel Journal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +176,10 @@
 				Base,
 			);
 			mainGroup = 7609F98D2BD1D69300C762A7;
+			packageReferences = (
+				7609F9A92BD1D89C00C762A7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				7609F9AC2BD1DAF200C762A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7609F9972BD1D69300C762A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +196,7 @@
 			files = (
 				7609F9A12BD1D69500C762A7 /* Preview Assets.xcassets in Resources */,
 				7609F99E2BD1D69500C762A7 /* Assets.xcassets in Resources */,
+				7609F9C22BD1EDAD00C762A7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +207,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609F9BC2BD1DC8300C762A7 /* JournalViewModel.swift in Sources */,
+				7609F9B82BD1DBC100C762A7 /* JournalEntryDetails.swift in Sources */,
+				768F277B2BD3F340009649A0 /* PhotosPickerService.swift in Sources */,
+				7609F9C62BD1F29800C762A7 /* IndividualJournalEntryCard.swift in Sources */,
+				7609F9B62BD1DBB200C762A7 /* AllJournalEntriesList.swift in Sources */,
+				7609F9A82BD1D6B200C762A7 /* Models.swift in Sources */,
+				7609F9C02BD1EBF900C762A7 /* FullSizeLottieAnimations.swift in Sources */,
+				768F27812BD43BD0009649A0 /* EntryHighlightCard.swift in Sources */,
+				7609F9B42BD1DB8800C762A7 /* AddJournalHighlight.swift in Sources */,
+				7609F9BE2BD1EB9300C762A7 /* LottieAnimatons.swift in Sources */,
 				7609F99C2BD1D69300C762A7 /* ContentView.swift in Sources */,
+				7609F9BA2BD1DC7200C762A7 /* JournalRepository.swift in Sources */,
+				768F277F2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift in Sources */,
+				7609F9C42BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift in Sources */,
+				7609F9B22BD1DB6D00C762A7 /* AddJournalEntry.swift in Sources */,
+				76DFC7ED2BD299E300C77528 /* GeoLocationService.swift in Sources */,
+				7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */,
 				7609F99A2BD1D69300C762A7 /* Travel_JournalApp.swift in Sources */,
+				768F277D2BD4002A009649A0 /* AddHighlightLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +429,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7609F9A92BD1D89C00C762A7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		7609F9AC2BD1DAF200C762A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7609F9AA2BD1D89C00C762A7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7609F9A92BD1D89C00C762A7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		7609F9AD2BD1DAF200C762A7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7609F9AC2BD1DAF200C762A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7609F9AF2BD1DAF200C762A7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7609F9AC2BD1DAF200C762A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7609F98E2BD1D69300C762A7 /* Project object */;
 }
