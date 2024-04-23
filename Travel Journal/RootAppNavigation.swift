@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct RootAppNavigation: View {
+    @State private var selectedTab: Int = 0
+    
+    private func navigationTitle(for tag: Int) -> String {
+        switch tag {
+        case 0:
+            return "Travel Journal"
+        case 1:
+            return "Settings"
+        default:
+            return "Travel Journal"
+        }
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            TabView(
+                selection: $selectedTab,
+                content:  {
+                    AllJournalEntriesList()
+                        .tabItem {
+                            Label("Journal", systemImage: "books.vertical.fill")
+                        }
+                        .tag(0)
+                    MainAppSettingsScreen()
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
+                        .tag(1)
+                }
+            )
+            .navigationTitle(navigationTitle(for: selectedTab))
+        }
     }
 }
 

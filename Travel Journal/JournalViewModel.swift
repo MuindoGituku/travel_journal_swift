@@ -18,7 +18,6 @@ class JournalViewModel: ObservableObject {
     
     init(journalRepo: JournalRepository) {
         self.journalRepo = journalRepo
-        getAllJournalEntriesOnFile()
     }
     
     private func launchDataOperation(operation: @escaping () async throws -> Void) {

@@ -17,7 +17,7 @@ struct Travel_JournalApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AllJournalEntriesList()
+            RootAppNavigation()
         }
     }
 }
