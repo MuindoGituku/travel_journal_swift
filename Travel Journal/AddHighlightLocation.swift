@@ -156,34 +156,3 @@ struct AddHighlightLocation: View {
         }
     }
 }
-
-#Preview {
-    AddHighlightLocation(
-        selectedLocation: .constant(nil),
-        selectedLocationTitle: .constant(""),
-        entryInView: JournalEntry (
-            id: "8K8x64Mu9BwOginp69Dg",
-            entryThumbnail: "",
-            travelLocation: "Paris, France",
-            travelLocationCoordinates: HighlightCoordinates(latitude: 48.8588443, longitude: 2.2943506),
-            travelStartDate: Date(timeIntervalSince1970: 1633046400), // October 1, 2023
-            travelEndDate: Date(timeIntervalSince1970: 1633824000), // October 10, 2023
-            entryHighlights: [
-                JournalEntryHighlight(
-                    highlightLocation: "Eiffel Tower",
-                    journalHighlightEntry: "Visited the iconic Eiffel Tower",
-                    entryHighlights: ["Eiffel Tower", "Paris"],
-                    locationCoordinates: HighlightCoordinates(latitude: 48.8588443, longitude: 2.2943506),
-                    travelDate: Date(timeIntervalSince1970: 1633219200) // October 3, 2023
-                ),
-                JournalEntryHighlight(
-                    highlightLocation: "Louvre Museum",
-                    journalHighlightEntry: "Explored amazing artworks at the Louvre",
-                    entryHighlights: ["Louvre Museum", "Paris"],
-                    locationCoordinates: HighlightCoordinates(latitude: 48.8606111, longitude: 2.337644),
-                    travelDate: Date(timeIntervalSince1970: 1633392000) // October 5, 2023
-                )
-            ]
-        )
-    )
-}

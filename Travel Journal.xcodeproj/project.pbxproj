@@ -30,12 +30,16 @@
 		763DFCA22BD7E28800D9D8AE /* RootAppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DFCA12BD7E28800D9D8AE /* RootAppNavigation.swift */; };
 		763DFCA42BD7E30B00D9D8AE /* MainAppSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DFCA32BD7E30B00D9D8AE /* MainAppSettingsScreen.swift */; };
 		763DFCA62BD7E8ED00D9D8AE /* SettingsItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DFCA52BD7E8ED00D9D8AE /* SettingsItemCard.swift */; };
+		76480F3E2BDA975B00BAA312 /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76480F3D2BDA975B00BAA312 /* AppSettingsManager.swift */; };
+		76480F412BDAA25C00BAA312 /* HeroSectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76480F402BDAA25C00BAA312 /* HeroSectionSettings.swift */; };
+		76480F432BDAB1A100BAA312 /* HeroSectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76480F422BDAB1A100BAA312 /* HeroSectionCard.swift */; };
 		7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */; };
 		768F277B2BD3F340009649A0 /* PhotosPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277A2BD3F340009649A0 /* PhotosPickerService.swift */; };
 		768F277D2BD4002A009649A0 /* AddHighlightLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */; };
 		768F277F2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */; };
 		768F27812BD43BD0009649A0 /* EntryHighlightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */; };
 		76DFC7ED2BD299E300C77528 /* GeoLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */; };
+		76EE5F3C2BDD5E2300E22388 /* IndividualJournalEntryCard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE5F3B2BDD5E2300E22388 /* IndividualJournalEntryCard2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,12 +64,16 @@
 		763DFCA12BD7E28800D9D8AE /* RootAppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAppNavigation.swift; sourceTree = "<group>"; };
 		763DFCA32BD7E30B00D9D8AE /* MainAppSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppSettingsScreen.swift; sourceTree = "<group>"; };
 		763DFCA52BD7E8ED00D9D8AE /* SettingsItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCard.swift; sourceTree = "<group>"; };
+		76480F3D2BDA975B00BAA312 /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		76480F402BDAA25C00BAA312 /* HeroSectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionSettings.swift; sourceTree = "<group>"; };
+		76480F422BDAB1A100BAA312 /* HeroSectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionCard.swift; sourceTree = "<group>"; };
 		7680D95B2BD746C200989757 /* AddingNewHighlightWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewHighlightWidget.swift; sourceTree = "<group>"; };
 		768F277A2BD3F340009649A0 /* PhotosPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerService.swift; sourceTree = "<group>"; };
 		768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHighlightLocation.swift; sourceTree = "<group>"; };
 		768F277E2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryHighlightsSheet.swift; sourceTree = "<group>"; };
 		768F27802BD43BD0009649A0 /* EntryHighlightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHighlightCard.swift; sourceTree = "<group>"; };
 		76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationService.swift; sourceTree = "<group>"; };
+		76EE5F3B2BDD5E2300E22388 /* IndividualJournalEntryCard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJournalEntryCard2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		7609F9982BD1D69300C762A7 /* Travel Journal */ = {
 			isa = PBXGroup;
 			children = (
+				76480F3F2BDAA23F00BAA312 /* SettingsScreens */,
 				7609F9C12BD1EDAD00C762A7 /* GoogleService-Info.plist */,
 				7609F9992BD1D69300C762A7 /* Travel_JournalApp.swift */,
 				7609F99B2BD1D69300C762A7 /* ContentView.swift */,
@@ -117,6 +126,7 @@
 				7609F9BF2BD1EBF900C762A7 /* FullSizeLottieAnimations.swift */,
 				7609F9C32BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift */,
 				7609F9C52BD1F29800C762A7 /* IndividualJournalEntryCard.swift */,
+				76EE5F3B2BDD5E2300E22388 /* IndividualJournalEntryCard2.swift */,
 				76DFC7EC2BD299E300C77528 /* GeoLocationService.swift */,
 				768F277A2BD3F340009649A0 /* PhotosPickerService.swift */,
 				768F277C2BD4002A009649A0 /* AddHighlightLocation.swift */,
@@ -127,6 +137,8 @@
 				763DFCA12BD7E28800D9D8AE /* RootAppNavigation.swift */,
 				763DFCA32BD7E30B00D9D8AE /* MainAppSettingsScreen.swift */,
 				763DFCA52BD7E8ED00D9D8AE /* SettingsItemCard.swift */,
+				76480F3D2BDA975B00BAA312 /* AppSettingsManager.swift */,
+				76480F422BDAB1A100BAA312 /* HeroSectionCard.swift */,
 			);
 			path = "Travel Journal";
 			sourceTree = "<group>";
@@ -137,6 +149,14 @@
 				7609F9A02BD1D69500C762A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76480F3F2BDAA23F00BAA312 /* SettingsScreens */ = {
+			isa = PBXGroup;
+			children = (
+				76480F402BDAA25C00BAA312 /* HeroSectionSettings.swift */,
+			);
+			path = SettingsScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +242,7 @@
 				7609F9BC2BD1DC8300C762A7 /* JournalViewModel.swift in Sources */,
 				7609F9B82BD1DBC100C762A7 /* JournalEntryDetails.swift in Sources */,
 				768F277B2BD3F340009649A0 /* PhotosPickerService.swift in Sources */,
+				76480F432BDAB1A100BAA312 /* HeroSectionCard.swift in Sources */,
 				7609F9C62BD1F29800C762A7 /* IndividualJournalEntryCard.swift in Sources */,
 				7609F9B62BD1DBB200C762A7 /* AllJournalEntriesList.swift in Sources */,
 				7609F9A82BD1D6B200C762A7 /* Models.swift in Sources */,
@@ -231,13 +252,16 @@
 				763DFCA42BD7E30B00D9D8AE /* MainAppSettingsScreen.swift in Sources */,
 				763DFCA62BD7E8ED00D9D8AE /* SettingsItemCard.swift in Sources */,
 				7609F9BE2BD1EB9300C762A7 /* LottieAnimatons.swift in Sources */,
+				76EE5F3C2BDD5E2300E22388 /* IndividualJournalEntryCard2.swift in Sources */,
 				7609F99C2BD1D69300C762A7 /* ContentView.swift in Sources */,
 				7609F9BA2BD1DC7200C762A7 /* JournalRepository.swift in Sources */,
 				768F277F2BD43BA8009649A0 /* JournalEntryHighlightsSheet.swift in Sources */,
 				7609F9C42BD1EE4700C762A7 /* FullSizeLottieButtonAnimations.swift in Sources */,
+				76480F3E2BDA975B00BAA312 /* AppSettingsManager.swift in Sources */,
 				763DFCA22BD7E28800D9D8AE /* RootAppNavigation.swift in Sources */,
 				7609F9B22BD1DB6D00C762A7 /* AddJournalEntry.swift in Sources */,
 				76DFC7ED2BD299E300C77528 /* GeoLocationService.swift in Sources */,
+				76480F412BDAA25C00BAA312 /* HeroSectionSettings.swift in Sources */,
 				763DFCA02BD7C23800D9D8AE /* HighlightImagesDialog.swift in Sources */,
 				7680D95C2BD746C200989757 /* AddingNewHighlightWidget.swift in Sources */,
 				7609F99A2BD1D69300C762A7 /* Travel_JournalApp.swift in Sources */,

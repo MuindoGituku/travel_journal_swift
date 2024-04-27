@@ -102,7 +102,7 @@ struct MainAppSettingsScreen: View {
         }
         .listStyle(.grouped)
         .navigationDestination(isPresented: $showHeroSectionSettingsScreen) {
-            
+            HeroSectionSettings()
         }
         .navigationDestination(isPresented: $showEntriesListSettingsScreen) {
             
@@ -128,6 +128,5 @@ struct MainAppSettingsScreen: View {
 #Preview {
     NavigationStack {
         MainAppSettingsScreen()
-            .navigationTitle("Settings")
     }
 }

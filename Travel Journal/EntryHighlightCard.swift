@@ -140,17 +140,3 @@ struct EntryHighlightCard: View {
         }
     }
 }
-
-#Preview {
-    EntryHighlightCard (
-        entryInView: "8K8x64Mu9BwOginp69Dg",
-        highlightInView: JournalEntryHighlight(
-            highlightLocation: "Eiffel Tower",
-            journalHighlightEntry: "Visited the iconic Eiffel Tower",
-            entryHighlights: ["Eiffel Tower", "Paris", "Another One", "One More", "Niivo Sasa"],
-            locationCoordinates: HighlightCoordinates(latitude: 48.8588443, longitude: 2.2943506),
-            travelDate: Date(timeIntervalSince1970: 1633219200) // October 3, 2023
-        ), 
-        onTapImageRect: { }
-    )
-}

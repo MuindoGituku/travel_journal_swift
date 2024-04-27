@@ -14,6 +14,8 @@ struct JournalEntry: Codable, Identifiable {
     var travelLocationCoordinates: HighlightCoordinates
     var travelStartDate: Date
     var travelEndDate: Date
+    var dateCreated: Date
+    var lastUpdated: Date
     var entryHighlights: [JournalEntryHighlight]
     
     enum CodingKeys: String, CodingKey {
@@ -23,6 +25,8 @@ struct JournalEntry: Codable, Identifiable {
         case travelLocationCoordinates = "travel_location_coordinates"
         case travelStartDate = "travel_start_date"
         case travelEndDate = "travel_end_date"
+        case dateCreated = "date_created"
+        case lastUpdated = "last_updated"
         case entryHighlights = "entry_highlights"
     }
 }
@@ -33,6 +37,8 @@ struct JournalEntryHighlight: Codable {
     var entryHighlights: [String]
     var locationCoordinates: HighlightCoordinates
     var travelDate: Date
+    var dateCreated: Date
+    var lastUpdated: Date
     
     enum CodingKeys: String, CodingKey {
         case highlightLocation = "highlight_location"
@@ -40,6 +46,8 @@ struct JournalEntryHighlight: Codable {
         case entryHighlights = "entry_highlights"
         case locationCoordinates = "location_coordinates"
         case travelDate = "travel_date"
+        case dateCreated = "date_created"
+        case lastUpdated = "last_updated"
     }
 }
 

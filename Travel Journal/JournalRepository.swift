@@ -71,7 +71,7 @@ class JournalRepository {
     
     func uploadNewJournalEntry(startDate: Date, endDate: Date, travelLocation: String, longitude: Double, latitude: Double) async throws -> [JournalEntry] {
         return try await executeWithExceptionHandling { [self] in
-            let newJournalEntry = JournalEntry(id: UUID().uuidString, entryThumbnail: "", travelLocation: travelLocation, travelLocationCoordinates: HighlightCoordinates(latitude: latitude, longitude: longitude), travelStartDate: startDate, travelEndDate: endDate, entryHighlights: [])
+            let newJournalEntry = JournalEntry(id: UUID().uuidString, entryThumbnail: "", travelLocation: travelLocation, travelLocationCoordinates: HighlightCoordinates(latitude: latitude, longitude: longitude), travelStartDate: startDate, travelEndDate: endDate, dateCreated: Date(), lastUpdated: Date(), entryHighlights: [])
             
             let newJournalEntryData = try Firestore.Encoder().encode(newJournalEntry)
             
@@ -86,6 +86,7 @@ class JournalRepository {
             var entry = try await getSingleJournalEntry(entryID: entryID)
             entry.id = entryID
             entry.entryThumbnail = imageURL
+            entry.lastUpdated = Date()
             
             try db.collection("entries").document(entryID).setData(from: entry)
             
@@ -102,10 +103,11 @@ class JournalRepository {
                 highlightsImagesURLs.append(imageURL)
             }
             
-            let newJournalEntryHighlight = JournalEntryHighlight(highlightLocation: highlightLocation, journalHighlightEntry: journalHighlightEntry, entryHighlights: highlightsImagesURLs, locationCoordinates: HighlightCoordinates(latitude: latitude, longitude: longitude), travelDate: highlightDate)
+            let newJournalEntryHighlight = JournalEntryHighlight(highlightLocation: highlightLocation, journalHighlightEntry: journalHighlightEntry, entryHighlights: highlightsImagesURLs, locationCoordinates: HighlightCoordinates(latitude: latitude, longitude: longitude), travelDate: highlightDate, dateCreated: Date(), lastUpdated: Date())
             
             var entry = try await getSingleJournalEntry(entryID: entryID)
             entry.id = entryID
+            entry.lastUpdated = Date()
             entry.entryHighlights.append(newJournalEntryHighlight)
             
             try db.collection("entries").document(entryID).setData(from: entry)
